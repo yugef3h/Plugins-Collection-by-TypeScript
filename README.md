@@ -1,5 +1,3 @@
-![](http://api.blackatall.cn/logo.png)
-
 移动端[携程]前端页面demo
 =========================
 

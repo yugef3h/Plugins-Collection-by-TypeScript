@@ -1,3 +1,5 @@
+// 核心源码简单实现
+
 const Observer = function(data) {
   // 循环修改为每个属性添加get set
   for (let key in data) {

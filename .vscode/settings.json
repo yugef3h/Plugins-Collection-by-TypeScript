@@ -1,0 +1,47 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    120
+  ],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "------[vue]------": "使用 prettier 识别 vue，其他框架类似",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "prettier.packageManager": "yarn",
+  "eslint.run": "onSave",
+  "vetur.validation.template": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "------typescript------": "参考自 https://github.com/microsoft/vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "typescript.tsc.autoDetect": "off",
+  "------mark below------": "关闭 vetur 中、js/ts 中的默认 format 格式化，打开 eslint 格式化",
+  "javascript.format.enable": false,
+  "vetur.format.defaultFormatter.js": "none",
+  "typescript.format.enable": false,
+  "vetur.format.defaultFormatter.ts": "none",
+  "eslint.format.enable": true,
+  "------editor.codeActionsOnSave------": "开启 eslint 自动修复 js/ts 功能",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "------editor.validate------": "其实没有意义，配好上面的即可",
+  "eslint.validate": ["vue", "javascript", "javascriptreact", "typescript"],
+}

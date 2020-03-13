@@ -1,31 +1,9 @@
 {
   "name": "clean-webpack-plugin",
-  "version": "3.0.0",
-  "author": "John Agan <johnagan@gmail.com>",
-  "description": "A webpack plugin to remove/clean your build folder(s).",
-  "homepage": "https://github.com/johnagan/clean-webpack-plugin",
-  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
   "main": "dist/clean-webpack-plugin.js",
   "types": "dist/clean-webpack-plugin.d.ts",
-  "files": [
-    "dist/"
-  ],
-  "engines": {
-    "node": ">=8.9.0"
-  },
-  "keywords": [
-    "webpack",
-    "plugin",
-    "clean",
-    "node"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/johnagan/clean-webpack-plugin.git"
-  },
-  "bugs": {
-    "url": "https://github.com/johnagan/clean-webpack-plugin/issues"
-  },
   "scripts": {
     "clean": "del-cli --dot=true \"./dist/**/*\"",
     "build": "npm run clean && npm run build.compile && npm run build.types",
@@ -79,5 +57,11 @@
   "dependencies": {
     "@types/webpack": "^4.4.31",
     "del": "^4.1.1"
+  },
+  "files": [
+    "dist/"
+  ],
+  "engines": {
+    "node": ">=8.9.0"
   }
 }
